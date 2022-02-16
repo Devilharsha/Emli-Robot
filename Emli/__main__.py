@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm Emli anime-theme management bot [✨](https://te.legra.ph/file/074ef8d210745e3380baf.jpg)
+✪ I'm Shiva anime-theme management bot [✨](http://telegra.ph/file/24e2b1c077ccea4d7ded3.jpg)
 ────────────────────────
 × *Bot Uptime:* `{}`
 × `{}` *users, across* `{}` *chats*
@@ -92,17 +92,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emli Robot", callback_data="emli_"),
+        InlineKeyboardButton(text="About Shiva Robot", callback_data="emli_"),
     ],
     [
         InlineKeyboardButton(text="Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="support!​​", url="t.me/OMG_info"
+            text="support!​​", url="t.me/SENKUCHAT"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Emli To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Add shiva To Your Group ➗", url="t.me/Shiva_Probot?startgroup=new"),
     ],
 ]
 
@@ -110,10 +110,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://te.legra.ph/file/074ef8d210745e3380baf.jpg"
+EMI_IMG = "http://telegra.ph/file/24e2b1c077ccea4d7ded3.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @shado_hackers \
+ You can support the project by contacting @harshahero \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi👋 I'm Emli robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi👋 I'm shiva robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -449,7 +449,7 @@ def emli_about_callback(update, context):
                  
                  ]
                 ]
-            ),
+            ), 
         )
 
 
